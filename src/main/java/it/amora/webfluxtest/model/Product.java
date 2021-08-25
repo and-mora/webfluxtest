@@ -7,11 +7,11 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
 @Builder
-@Document
+@Document("product")
 public class Product {
 
     @Id
-    private Long id;
+    private String id;
     private String name;
     private double price;
 }
